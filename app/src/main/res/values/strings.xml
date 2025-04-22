@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ClimaXpert</string>
+    <string name="splash__title">ClimaXpert</string>
+    <string name="splash__desc">Не беспокойтесь о\nпогоде, мы все подскажем</string>
+
+    <string name="home__city">Казань, Россия</string>
+    <string name="home__rain_percent">Шанс дождя</string>
+    <string name="home__air_state">Облачно с прояснениями</string>
+    <string name="home__temperature">32°</string>
+    <string name="home__rain_territory">10%</string>
+    <string name="home__sun_percent">0.5</string>
+    <string name="home__wind_speed">4 м/c</string>
+    <string name="home__assistant">Ассистент</string>
+    <string name="home__assistant_text">Сегодня будет дождь,
+        не забудьте шапку</string>
+    <string name="home__assistant_time">14 мин. назад</string>
+    <string name="home__time">14:00</string>
+    <string name="home__yesterday_btn">Вчера</string>
+    <string name="home__today_btn">Сегодня</string>
+    <string name="home__tomorrow_btn">Завтра</string>
+    <string name="home__forecast">Прогноз</string>
+    <string name="home__forecast_date">Апрель 21, 2025</string>
+
+
+    <string name="text_size__title">18sp</string>
+    <string name="text_size__desc">7pt</string>
+    <string name="title_activity_side_bar">SideBar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
