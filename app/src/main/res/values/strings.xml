@@ -20,4 +20,12 @@
     <string name="home__tomorrow_btn">Завтра</string>
     <string name="home__forecast">Прогноз</string>
     <string name="home__forecast_date">Апрель 21, 2025</string>
+
+    <string-array name="screen_array">
+        <item>Screen 1</item>
+        <item>Screen 2</item>
+        <item>Screen 3</item>
+        <item>Screen 4</item>
+        <item>Screen 5</item>
+    </string-array>
 </resources>

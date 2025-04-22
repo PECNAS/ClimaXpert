@@ -12,4 +12,7 @@
     <color name="grad_first">#3C6FD1</color>
     <color name="grad_second">#3C6FD1</color>
     <color name="grad_third">#7CA9FF</color>
+
+    <color name="grad_blue_first">#c6d7fb</color>
+    <color name="grad_blue_second">#e5edfc</color>
 </resources>
