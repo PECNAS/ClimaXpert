@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.os.Message;
 import android.view.View;
 import android.widget.TextView;
 
@@ -45,17 +44,41 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
         binding_swipes();
-        getWeather();
-
+        get_weather();
     }
 
-    public void getWeather() {
-        TextView texter = findViewById(R.id.textView);
-        GetAIAnswer questener = new GetAIAnswer();
-        questener.setTexter(texter);
 
-        questener.getResult();
-        String result = questener.getAnswer();
+    public void get_weather() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://free.easychat.work/") // Базовый URL
+                .addConverterFactory(GsonConverterFactory.create()) // Используем Gson для конвертации JSON
+                .build();
+
+        // Создаем экземпляр интерфейса API
+        ChatService chatService = retrofit.create(ChatService.class);
+
+        // Создаем данные запроса
+        List<Message> messages = List.of(new Message("user", "Привет!"));
+        ChatRequest chatRequest = new ChatRequest("gpt-3.5-turbo", "0.7", "0", messages);
+
+        // Выполняем запрос
+        Call<ChatResponse> call = chatService.sendMessage(chatRequest);
+        call.enqueue(new Callback<ChatResponse>() {
+            @Override
+            public void onResponse(Call<ChatResponse> call, Response<ChatResponse> response) {
+                TextView texter = findViewById(R.id.textView);
+                texter.setText(Integer.toString(response.code()));
+
+
+                TextView texter2 = findViewById(R.id.textView2);
+
+            }
+
+            @Override
+            public void onFailure(Call<ChatResponse> call, Throwable t) {
+
+            }
+        });
     }
 
     private void binding_swipes() {
