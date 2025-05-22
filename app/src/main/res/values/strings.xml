@@ -1,4 +1,6 @@
 <resources>
+    <string name="weather_api_key">63085ab9b973a44fa9e3768349bcfb44</string>
+
     <string name="app_name">ClimaXpert</string>
     <string name="splash__title">ClimaXpert</string>
     <string name="splash__desc">Не беспокойтесь о\nпогоде, мы все подскажем</string>
@@ -11,8 +13,7 @@
     <string name="home__sun_percent">0.5</string>
     <string name="home__wind_speed">4 м/c</string>
     <string name="home__assistant">Ассистент</string>
-    <string name="home__assistant_text">Сегодня будет дождь,
-        не забудьте шапку</string>
+    <string name="home__assistant_text">Сегодня я рекомендую надеть: головной убор, верх — легкая куртка, низ — джинсы, обувь — кроссовки. Зонт не нужен. Комфортное время нахождения на улице: 2-3 часа.</string>
     <string name="home__assistant_time">14 мин. назад</string>
     <string name="home__time">14:00</string>
     <string name="home__yesterday_btn">Вчера</string>
